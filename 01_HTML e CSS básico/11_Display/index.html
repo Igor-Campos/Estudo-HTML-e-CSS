@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!--
+        Fluxo do Layout
+        O fluxo do layout no HTML ocorre conforme o modo de escrita definido. Por padrão, de cima para baixo de esquerda para direita.
+
+        * span
+        Tag genérica que não possui nenhum estilo pré-definido/semântica. É equivalente a uma div, mas sem o display block.
+--------------------------------------------------------------------------------------------------------------------------------------------
+        Display inline e block
+        Define como a caixa (box model) irá se comportar.
+        
+        * inline
+        Respeita o fluxo da escrita sem iniciar uma nova linha, não é possível definir valores de width, height, margin (top/bottom) e etc. É o estilo padrão.
+
+        * block
+        Inicia uma nova linha e não permite que outros elementos sejam posicionados em sua linha. Aceita todas as propriedades do box model. Estilo inicial de elementos como h1, p, div e outros.
+--------------------------------------------------------------------------------------------------------------------------------------------
+        none e inline-block
+
+        * none
+        Remove o elemento completamente da tela.
+
+        * inline-block
+        O elemento continua inline, mas passa a receber as propriedades do box model.
+--------------------------------------------------------------------------------------------------------------------------------------------
+    -->
+    <h1>H1 Block</h1>
+    <a href="/">Link Inline</a>
+    <span>Span Inline</span>
+    <strong>Strong Inline</strong>
+    <p>P Block</p>
+    <p>Esse é um texto com um <span>elemento inline</span> dentro dele.</p>
+    <div>
+        Esse é um texto com um
+        <div>elemento block</div>
+        dentro dele.
+    </div>
+    <br><br><hr><br><br>
+
+    <div>Acesse o meu curso <a href="/">neste link</a>.</div>
+    <div>Acesseo meu curso</div>
+</body>
+</html>

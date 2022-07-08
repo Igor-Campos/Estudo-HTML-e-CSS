@@ -1,0 +1,110 @@
+body {
+    font-family: arial;
+    margin: 0px;
+    background: #f7f7f7;
+    display: grid;
+    gap: 60px; /*60 pixels de distância entre uma div e/ou imagem e outra*/
+    justify-items: center; /*Alinhar ao centro*/
+    margin-top: 60px;
+}
+
+img {
+    max-width: 100%; /*Deixar imagem proporcional a tela*/
+    display: block; 
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2, h3 {
+    margin: 0px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.3; /*Distanciar um pouco as linhas*/
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; /*Vai quebrar as linhas quando diminuir a tela.*/
+    gap: 20px;
+    justify-content: center; /*Quando quebrar as linhas, o itens ficarem no centro.*/
+}
+
+.menu a {
+    background: #ffffff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    color: #000000;
+    text-transform: uppercase; /*Deixar as letras maiúsculas*/
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px; /*limite nas laterais*/
+}
+
+.introducao {
+    background: #ffffff;
+    padding: 40px;
+    text-align: right;
+    position: relative; /*faz com que o detalhe fica a 30 pixels em relação a ele e não mais o body*/
+    display: grid;
+    align-content: center;
+    gap: 20px;
+    justify-items: end;
+}
+
+.detalhe {
+    width: 60px;
+    height: 4px;
+    background: #ee2211;
+    position: absolute; /*Não influencia nos demais elementos, vai pra qualquer luar que mandar. (Posição absoluta em relação ao body)*/
+    top: 30px;
+    right: -30px;
+}
+
+.botao {
+    background: #ee2211;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.subtitulo {
+    font-size: 64px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+    text-align: right;
+    padding: 40px;
+    align-self: center; /*Falando com o item dentro do grid, e alinhando ao centro.*/
+}
+
+.vantagens {
+    background: #ffffff;
+    padding: 40px;
+
+}
+
+.vantagens-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px 20px;
+    padding: 20px;
+}
+
+.vantagens-item p {
+    grid-column: 2;
+}
+
+.rodape {
+    background: #ffffff;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    box-sizing: border-box; /*Ele tem o máximo de expansão do contêiner*/
+}

@@ -1,0 +1,5 @@
+img {
+    max-width: 100%; /*Aumenta e diminui a imagem proporcionalmente (largura e altura). É essencial colocar assim.*/
+    width: 600px;
+    display: block;
+}
