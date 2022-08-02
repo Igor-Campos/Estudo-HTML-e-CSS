@@ -1,0 +1,15 @@
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex; /*Um item do lado do outro*/
+    gap: 20px; /*Separar esses itens*/
+}
+
+a {
+    text-decoration: none;
+    background: #eeeeee;
+    padding: 10px 20px;
+    display: block;
+    color: black;
+}
