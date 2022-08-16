@@ -1,0 +1,23 @@
+.lista-1 li:first-child {
+  background: #ccaaff;
+}
+
+.lista-1 li:last-child {
+  background: #ccffaa;
+}
+
+.lista-1 li:nth-child(3) { /*Escolhe a posição*/
+  background: #ffccaa;
+}
+
+.lista-1 li:nth-child(even) { /*Escolhe todos os elementos pares...  odd é ímpares.*/
+  background: #ffccaa;
+}
+
+.lista-1 li:nth-child(2n) { /*Escolhe de 2 em 2. 3n de 3 em 3, e assim por diante*/
+  background: #ffccaa;
+}
+
+.lista-3 li:not(:first-child, :last-child) {
+  background: #ccaaff;
+}

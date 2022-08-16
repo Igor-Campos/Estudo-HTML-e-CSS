@@ -1,0 +1,26 @@
+a {
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: Arial;
+  text-decoration: none;
+  background: #ccaaff;
+  color: #221177;
+}
+
+a:hover { /*Passar o mouse em cima mudar o estilo determinado*/
+  background: #aaddff;
+  color: #114477;
+}
+
+a:focus { /*Mais específico para links e elementos que podem ser focados*/
+  background: #ccffaa;
+  color: #337711;
+}
+
+a:active { /*No momento que você clicou no botão, esse botão é ativado*/
+  background: #ffa;
+  color: #776611;
+}
+
+/*a:visited é para link que já foi visitado*/
